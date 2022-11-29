@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Ds" targetNamespace="http://tempuri.org/Ds.xsd" xmlns:mstns="http://tempuri.org/Ds.xsd" xmlns="http://tempuri.org/Ds.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Ds" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="Ds" msprop:Generator_DataSetName="Ds">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="T_programme" msprop:Generator_RowClassName="T_programmeRow" msprop:Generator_RowEvHandlerName="T_programmeRowChangeEventHandler" msprop:Generator_RowDeletedName="T_programmeRowDeleted" msprop:Generator_RowDeletingName="T_programmeRowDeleting" msprop:Generator_RowEvArgName="T_programmeRowChangeEvent" msprop:Generator_TablePropName="T_programme" msprop:Generator_RowChangedName="T_programmeRowChanged" msprop:Generator_UserTableName="T_programme" msprop:Generator_RowChangingName="T_programmeRowChanging" msprop:Generator_TableClassName="T_programmeDataTable" msprop:Generator_TableVarName="tableT_programme">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="pro_no" msprop:Generator_UserColumnName="pro_no" msprop:Generator_ColumnPropNameInTable="pro_noColumn" msprop:Generator_ColumnPropNameInRow="pro_no" msprop:Generator_ColumnVarNameInTable="columnpro_no">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="pro_nom" msprop:Generator_UserColumnName="pro_nom" msprop:Generator_ColumnPropNameInTable="pro_nomColumn" msprop:Generator_ColumnPropNameInRow="pro_nom" msprop:Generator_ColumnVarNameInTable="columnpro_nom">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="pro_nbr_unites" msprop:Generator_UserColumnName="pro_nbr_unites" msprop:Generator_ColumnPropNameInTable="pro_nbr_unitesColumn" msprop:Generator_ColumnPropNameInRow="pro_nbr_unites" msprop:Generator_ColumnVarNameInTable="columnpro_nbr_unites" type="xs:double" />
+              <xs:element name="pro_nbr_heures" msprop:Generator_UserColumnName="pro_nbr_heures" msprop:Generator_ColumnPropNameInTable="pro_nbr_heuresColumn" msprop:Generator_ColumnPropNameInRow="pro_nbr_heures" msprop:Generator_ColumnVarNameInTable="columnpro_nbr_heures" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:T_programme" />
+      <xs:field xpath="mstns:pro_no" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

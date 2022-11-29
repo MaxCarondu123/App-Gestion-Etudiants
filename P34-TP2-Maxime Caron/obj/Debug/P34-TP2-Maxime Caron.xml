@@ -1,0 +1,416 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+P34-TP2-Maxime Caron
+</name>
+</assembly>
+<members>
+<member name="T:P34_TP2_Maxime_Caron.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:P34_TP2_Maxime_Caron.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:P34_TP2_Maxime_Caron.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:P34_TP2_Maxime_Caron.Code_Commun.Barrer(System.Windows.Forms.Control[])">
+ <summary>
+ Cette procedure permet de barrer certains controles sur la page
+ </summary>
+ <param name="ctrl"></param>
+</member>
+<member name="M:P34_TP2_Maxime_Caron.Code_Commun.DeBarrer(System.Windows.Forms.Control[])">
+ <summary>
+ Cette procedure permet de debarrer certains controles sur la page
+ </summary>
+ <param name="ctrl"></param>
+</member>
+<member name="M:P34_TP2_Maxime_Caron.Code_Commun.Vider_EcranProg(System.Windows.Forms.Control)">
+ <summary>
+ Cette procedure permet de vider les champs du formulaire programme
+ </summary>
+ <param name="grpProgramme"></param>
+</member>
+<member name="M:P34_TP2_Maxime_Caron.Code_Commun.Vider_EcranEtud(System.Windows.Forms.Control)">
+ <summary>
+ Cette procedure permet de vider les champs du formulaire etudiant
+ </summary>
+ <param name="grpEtudiant"></param>
+</member>
+<member name="M:P34_TP2_Maxime_Caron.Code_Commun.Valider_Text(System.Object)">
+ <summary>
+ Cette procedure permet de valider le text
+ </summary>
+ <param name="e"></param>
+</member>
+<member name="T:P34_TP2_Maxime_Caron.Ds">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:P34_TP2_Maxime_Caron.Ds.T_programmeDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:P34_TP2_Maxime_Caron.Ds.T_programmeRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:P34_TP2_Maxime_Caron.Ds.T_programmeRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:P34_TP2_Maxime_Caron.DsEtudiant">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:P34_TP2_Maxime_Caron.DsEtudiant.T_etudiantsDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:P34_TP2_Maxime_Caron.DsEtudiant.T_etudiantsRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:P34_TP2_Maxime_Caron.DsEtudiant.T_etudiantsRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:P34_TP2_Maxime_Caron.DsProgEtu">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:P34_TP2_Maxime_Caron.DsProgEtu.T_etudiantsDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:P34_TP2_Maxime_Caron.DsProgEtu.T_etudiantsRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:P34_TP2_Maxime_Caron.DsProgEtu.T_etudiantsRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:P34_TP2_Maxime_Caron.DsRapportEtu">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:P34_TP2_Maxime_Caron.DsRapportEtu.T_etudiantsDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:P34_TP2_Maxime_Caron.DsRapportEtu.T_etudiantsRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:P34_TP2_Maxime_Caron.DsRapportEtu.T_etudiantsRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:P34_TP2_Maxime_Caron.DsRapportEtuProg">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:P34_TP2_Maxime_Caron.DsRapportEtuProg.T_etudiantsDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:P34_TP2_Maxime_Caron.DsRapportEtuProg.T_etudiantsRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:P34_TP2_Maxime_Caron.DsRapportEtuProg.T_etudiantsRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:P34_TP2_Maxime_Caron.DsRapportProg">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:P34_TP2_Maxime_Caron.DsRapportProg.T_programmeDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:P34_TP2_Maxime_Caron.DsRapportProg.T_programmeRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:P34_TP2_Maxime_Caron.DsRapportProg.T_programmeRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="M:P34_TP2_Maxime_Caron.frmEtudiants.Etudiants_Load(System.Object,System.EventArgs)">
+ <summary>
+ Cette procedure permet remplir le formulaire des donnees
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:P34_TP2_Maxime_Caron.frmEtudiants.btnNouveau_Click(System.Object,System.EventArgs)">
+ <summary>
+ Cette procedure permet de choisir l'action de d'ajouter
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:P34_TP2_Maxime_Caron.frmEtudiants.btnOk_Click(System.Object,System.EventArgs)">
+ <summary>
+ Cette procedure permet de choisir l'action d'ajouter ou de modifier
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:P34_TP2_Maxime_Caron.frmEtudiants.Ajout_Etu">
+ <summary>
+ Cette procedure permet d'ajouter un nouveau etudiant
+ </summary>
+</member>
+<member name="M:P34_TP2_Maxime_Caron.frmEtudiants.Modif_Etu">
+ <summary>
+ Cette procedure permet de de modifier un etudiant
+ </summary>
+</member>
+<member name="M:P34_TP2_Maxime_Caron.frmEtudiants.btnAnnuler_Click(System.Object,System.EventArgs)">
+ <summary>
+ Cette procedure permet de choisir l'action d'annuler
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:P34_TP2_Maxime_Caron.frmEtudiants.btnModifier_Click(System.Object,System.EventArgs)">
+ <summary>
+ Cette procedure permet de choisir l'action de modifier
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:P34_TP2_Maxime_Caron.frmEtudiants.btnEnlever_Click(System.Object,System.EventArgs)">
+ <summary>
+ Cette procedure permet de choisir l'action d'enlever
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:P34_TP2_Maxime_Caron.frmEtudiants.dgEtudiants_SelectionChanged(System.Object,System.EventArgs)">
+ <summary>
+ Cette procedure permet de connaitre la ligne selectionner dans le data grid etudiant
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:P34_TP2_Maxime_Caron.frmEtudiants.frmEtudiants_FormClosing(System.Object,System.Windows.Forms.FormClosingEventArgs)">
+ <summary>
+ Cette procedure permet mettre faux quand le formualire se ferme
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:P34_TP2_Maxime_Caron.frmEtudiants.txtPrenom_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+ <summary>
+ Cette procedure permet de valider le texte entrer par l'utilisateur
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:P34_TP2_Maxime_Caron.frmListeEtu.frmListeEtu_Load(System.Object,System.EventArgs)">
+ <summary>
+ Cette procedure permet de remplir crystal report view
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:P34_TP2_Maxime_Caron.frmListeEtu.frmListeEtu_FormClosing(System.Object,System.Windows.Forms.FormClosingEventArgs)">
+ <summary>
+ Cette procedure permet mettre faux quand le formualire se ferme
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:P34_TP2_Maxime_Caron.frmListeEtuProg.frmListeEtuProg_Load(System.Object,System.EventArgs)">
+ <summary>
+ Cette procedure permet de remplir crystal report view
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:P34_TP2_Maxime_Caron.frmListeEtuProg.frmListeEtuProg_FormClosing(System.Object,System.Windows.Forms.FormClosingEventArgs)">
+ <summary>
+ Cette procedure permet mettre faux quand le formualire se ferme
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:P34_TP2_Maxime_Caron.frmListeProg.frmListeProg_Load(System.Object,System.EventArgs)">
+ <summary>
+ Cette procedure permet de remplir crystal report view
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:P34_TP2_Maxime_Caron.frmListeProg.frmListeProg_FormClosing(System.Object,System.Windows.Forms.FormClosingEventArgs)">
+ <summary>
+ Cette procedure permet mettre faux quand le formualire se ferme
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:P34_TP2_Maxime_Caron.frmPrincipal.mnuProgramme_Click(System.Object,System.EventArgs)">
+ <summary>
+ Cette procedure permet d'ouvrir le formulaire programme
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:P34_TP2_Maxime_Caron.frmPrincipal.mnuEtudiants_Click(System.Object,System.EventArgs)">
+ <summary>
+ Cette procedure permet d'ouvrir le formulaire etudiant
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:P34_TP2_Maxime_Caron.frmPrincipal.mnuListeProg_Click(System.Object,System.EventArgs)">
+ <summary>
+ Cette procedure permet d'ouvrir le formulaire list programme
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:P34_TP2_Maxime_Caron.frmPrincipal.mnuListeEtu_Click(System.Object,System.EventArgs)">
+ <summary>
+ Cette procedure permet d'ouvrir le formulaire list etudiant
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:P34_TP2_Maxime_Caron.frmPrincipal.mnuListeEtudProg_Click(System.Object,System.EventArgs)">
+ <summary>
+ Cette procedure permet d'ouvrir le formulaire list etudaiant par programme
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:P34_TP2_Maxime_Caron.frmProgramme.frmProgramme_Load(System.Object,System.EventArgs)">
+ <summary>
+ Cette procedure permet remplir le formulaire des donnees
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:P34_TP2_Maxime_Caron.frmProgramme.Remplir_DatagridProg">
+ <summary>
+ Cette procedure permet remplir le Data grid Programme
+ </summary>
+</member>
+<member name="M:P34_TP2_Maxime_Caron.frmProgramme.Remplir_DatagridEtu">
+ <summary>
+ Cette procedure permet remplir le Data grid Etudiant
+ </summary>
+</member>
+<member name="M:P34_TP2_Maxime_Caron.frmProgramme.dgProgramme_CellContentClick(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
+ <summary>
+ Cette procedure permet savoir quand on click sur le data grid programme
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:P34_TP2_Maxime_Caron.frmProgramme.dgProgramme_SelectionChanged(System.Object,System.EventArgs)">
+ <summary>
+ Cette procedure permet de connaitre ligne selectionner dans le data grid programme
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:P34_TP2_Maxime_Caron.frmProgramme.btnNouveau_Click(System.Object,System.EventArgs)">
+ <summary>
+ Cette procedure permet l'action d'ajouter
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:P34_TP2_Maxime_Caron.frmProgramme.btnOk_Click(System.Object,System.EventArgs)">
+ <summary>
+ Cette procedure permet de choisir l'action d'ajouter ou de modifier
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:P34_TP2_Maxime_Caron.frmProgramme.Ajout_Prog">
+ <summary>
+ Cette procedure permet d'ajouter nouveau programme
+ </summary>
+</member>
+<member name="M:P34_TP2_Maxime_Caron.frmProgramme.Modif_Prog">
+ <summary>
+ Cette procedure permet de modifier un programme
+ </summary>
+</member>
+<member name="M:P34_TP2_Maxime_Caron.frmProgramme.btnAnnuler_Click(System.Object,System.EventArgs)">
+ <summary>
+ Cette procedure permet d'annuler l'action choisi
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:P34_TP2_Maxime_Caron.frmProgramme.btnModifier_Click(System.Object,System.EventArgs)">
+ <summary>
+ Cette procedure permet de choisir l'action de modifier
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:P34_TP2_Maxime_Caron.frmProgramme.btnEnlever_Click(System.Object,System.EventArgs)">
+ <summary>
+ Cette procedure permet de choisir l'action d'enlever
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:P34_TP2_Maxime_Caron.frmProgramme.frmProgramme_FormClosing(System.Object,System.Windows.Forms.FormClosingEventArgs)">
+ <summary>
+ Cette procedure permet mettre faux quand le formualire se ferme
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:P34_TP2_Maxime_Caron.frmProgramme.txtNom_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+ <summary>
+ Cette procedure permet de valider le texte entrer par l'utilisateur
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+</members>
+</doc>

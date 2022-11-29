@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7E6C97F4-8F35-4227-A684-241E68C3B54E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>P34_TP2_Maxime_Caron.My.MyApplication</StartupObject>
+    <RootNamespace>P34_TP2_Maxime_Caron</RootNamespace>
+    <AssemblyName>P34-TP2-Maxime Caron</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>P34-TP2-Maxime Caron.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>P34-TP2-Maxime Caron.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Code_Commun.vb" />
+    <Compile Include="Ds.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsEtudiant.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsEtudiant.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsProgEtu.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsProgEtu.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsRapportEtu.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsRapportEtu.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsRapportEtuProg.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsRapportEtuProg.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsRapportProg.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsRapportProg.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmEtudiants.Designer.vb">
+      <DependentUpon>frmEtudiants.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEtudiants.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListeEtu.Designer.vb">
+      <DependentUpon>frmListeEtu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmListeEtu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListeEtuProg.Designer.vb">
+      <DependentUpon>frmListeEtuProg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmListeEtuProg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListeProg.Designer.vb">
+      <DependentUpon>frmListeProg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmListeProg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipal.Designer.vb">
+      <DependentUpon>frmPrincipal.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProgramme.Designer.vb">
+      <DependentUpon>frmProgramme.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmProgramme.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RapEtu.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RapEtu.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RapEtuProg.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RapEtuProg.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RapProg.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RapProg.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmEtudiants.resx">
+      <DependentUpon>frmEtudiants.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListeEtu.resx">
+      <DependentUpon>frmListeEtu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListeEtuProg.resx">
+      <DependentUpon>frmListeEtuProg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListeProg.resx">
+      <DependentUpon>frmListeProg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProgramme.resx">
+      <DependentUpon>frmProgramme.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RapEtu.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RapEtu.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RapEtuProg.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RapEtuProg.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RapProg.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RapProg.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ds.xsc">
+      <DependentUpon>Ds.xsd</DependentUpon>
+    </None>
+    <None Include="Ds.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Ds.xss">
+      <DependentUpon>Ds.xsd</DependentUpon>
+    </None>
+    <None Include="DsEtudiant.xsc">
+      <DependentUpon>DsEtudiant.xsd</DependentUpon>
+    </None>
+    <None Include="DsEtudiant.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsEtudiant.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DsEtudiant.xss">
+      <DependentUpon>DsEtudiant.xsd</DependentUpon>
+    </None>
+    <None Include="DsProgEtu.xsc">
+      <DependentUpon>DsProgEtu.xsd</DependentUpon>
+    </None>
+    <None Include="DsProgEtu.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsProgEtu.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DsProgEtu.xss">
+      <DependentUpon>DsProgEtu.xsd</DependentUpon>
+    </None>
+    <None Include="DsRapportEtu.xsc">
+      <DependentUpon>DsRapportEtu.xsd</DependentUpon>
+    </None>
+    <None Include="DsRapportEtu.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsRapportEtu.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DsRapportEtu.xss">
+      <DependentUpon>DsRapportEtu.xsd</DependentUpon>
+    </None>
+    <None Include="DsRapportEtuProg.xsc">
+      <DependentUpon>DsRapportEtuProg.xsd</DependentUpon>
+    </None>
+    <None Include="DsRapportEtuProg.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsRapportEtuProg.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DsRapportEtuProg.xss">
+      <DependentUpon>DsRapportEtuProg.xsd</DependentUpon>
+    </None>
+    <None Include="DsRapportProg.xsc">
+      <DependentUpon>DsRapportProg.xsd</DependentUpon>
+    </None>
+    <None Include="DsRapportProg.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsRapportProg.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DsRapportProg.xss">
+      <DependentUpon>DsRapportProg.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
